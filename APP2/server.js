@@ -24,4 +24,4 @@ function httprequest(url, data){
             console.log(res.body);
         }
     });
-};
+}
