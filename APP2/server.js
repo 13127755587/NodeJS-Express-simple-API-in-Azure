@@ -4,14 +4,15 @@
 
 var request = require('request');
 
-var hostname = 'http://127.0.0.1:3000/get?name=';
+var hostname = 'http://127.0.0.1:3000';
+var path = '/get?name=';
 var requestData = 'jery';
 
 httprequest(hostname, requestData);
 
 function httprequest(url, data){
     request({
-        url: hostname + requestData,
+        url: hostname + path + requestData,
         method: 'GET',
         json: true,
         headers: {
